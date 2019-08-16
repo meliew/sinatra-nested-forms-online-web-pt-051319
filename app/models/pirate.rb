@@ -1,5 +1,7 @@
 class Pirate
 
+  has_man :ships
+
   attr_reader :name, :weight, :height
   @@pirates = []
 
