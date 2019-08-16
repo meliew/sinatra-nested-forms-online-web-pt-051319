@@ -24,7 +24,7 @@ post '/pirates' do
 
   @ships = Ship.all
 
-  erb :show
+  erb :'pirates/show'
 end
 
   end
