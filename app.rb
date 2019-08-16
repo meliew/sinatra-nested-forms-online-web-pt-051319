@@ -17,14 +17,14 @@ post '/pirates' do
 
   post '/pirates' do
   @pirate = Pirate.new(params[:pirate])
- 
+
   params[:pirates][:ships].each do |details|
     Ship.new(details)
   end
- 
+
   @ships = Ship.all
- 
-  erb :student
+
+  erb :show
 end
 
   end
