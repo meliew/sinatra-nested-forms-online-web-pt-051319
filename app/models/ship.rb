@@ -2,8 +2,6 @@ class Ship
 
   attr_reader :name, :type, :booty
 
-  belongs_to :pirate
-
   @@ships = []
 
   def initialize(args)
