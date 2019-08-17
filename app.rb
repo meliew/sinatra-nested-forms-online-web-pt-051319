@@ -10,11 +10,6 @@ module FormsLab
   get '/new' do
     erb :'pirates/new'
   end
-  #
-  # get '/pirates' do
-  #   @pirates = Pirate.all
-  #   erb :'pirates/new'
-  # end
 
   post '/pirates' do
   @pirate = Pirate.new(params[:pirate])
