@@ -11,6 +11,10 @@ module FormsLab
     erb :new
   end
 
+  get '/pirates' do
+    @pirates = Pirate.all
+    erb "'pirates/index'"
+
 post '/pirates' do
   erb :pirates
   end
