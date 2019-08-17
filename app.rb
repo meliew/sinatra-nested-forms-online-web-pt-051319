@@ -13,7 +13,7 @@ module FormsLab
 
   get '/pirates' do
     @pirates = Pirate.all
-    erb :'pirates/index'
+    erb :'pirates/new'
   end
 
   post '/pirates' do
